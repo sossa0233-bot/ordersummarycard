@@ -115,3 +115,41 @@ font-weight: 700;
 .cancelorder:hover{
   color:black;
 }
+/* 🌐 Responsive design for smaller screens */
+@media (max-width: 768px) {
+  body {
+    background-image: url("pattern-background-mobile.svg");
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .planconntainer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .plandesccription {
+    margin-right: 0;
+  }
+
+  .proceedbutton,
+  .cancelorder {
+    font-size: 0.9rem;
+    padding: 0.8rem 0;
+  }
+}
